@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brainrot — 我知道我的大腦正在腐爛</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      color: #eaeaea;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ===== Glitch animation ===== */
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+
+    .glitch {
+      animation: glitch 0.6s infinite;
+    }
+
+    /* ===== Layout ===== */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    section {
+      margin-bottom: 100px;
+    }
+
+    /* ===== Hero ===== */
+    .hero h1 {
+      font-size: 3.2rem;
+      color: #00ff88;
+      text-shadow: 0 0 10px #00ff88;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 650px;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-style: italic;
+      color: #ff4444;
+    }
+
+    /* ===== Section titles ===== */
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    /* ===== Feature cards ===== */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #333;
+      padding: 20px;
+      background: rgba(255,255,255,0.02);
+      position: relative;
+    }
+
+    .card::after {
+      content: "SYSTEM ERROR";
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.7rem;
+      color: #ff4444;
+      opacity: 0.6;
+    }
+
+    .card h3 {
+      color: #00ff88;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Meter ===== */
+    .meter {
+      border-left: 4px solid #ff4444;
+      padding-left: 20px;
+      font-family: monospace;
+    }
+
+    .meter p {
+      margin-bottom: 10px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      opacity: 0.5;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #00ff88;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="glitch">Brainrotma</h1>
+      <p>
+        Brainrotma 不是來拯救你的專注力。<br>
+        它只是讓你**看清楚，你的大腦是如何一點一點腐爛的**。
+      </p>
+      <p class="tagline">
+        「我知道我的大腦正在 brainrot，而我選擇繼續。」
+      </p>
+    </section>
+
+    <!-- Concept -->
+    <section>
+      <h2>核心概念</h2>
+      <p>
+        Brainrotma 是一款披著 App 外殼的文化實驗。
+        它聚焦於一種當代常見卻難以言說的狀態——
+        在無限滑動、重複迷因與演算法推送中，
+        人逐漸失去注意力與判斷力，卻仍無法停下來。
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section>
+      <h2>主要功能</h2>
+      <div class="features">
+
+        <div class="card">
+          <h3>🌀 Brainrot Feed</h3>
+          <p>
+            看似普通的內容流，會隨著你的滑動行為逐漸崩壞。
+            你滑得越久，內容越重複、越失真、越沒有意義。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📊 Brainrot 指數</h3>
+          <p>
+            根據停留時間、滑動頻率與重複觀看行為，
+            將你的使用狀態轉譯為「腦腐等級」。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>💬 反 UX 提示</h3>
+          <p>
+            不提醒你休息，而是直接戳破你自己也知道的事：
+            你其實早就不想看了。
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>📓 Brainrot 日誌</h3>
+          <p>
+            將你每天消耗的迷因、關鍵字與無意義內容，
+            整理成一份荒謬卻真實的文化紀錄。
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Levels -->
+    <section>
+      <h2>腦腐等級</h2>
+      <div class="meter">
+        <p>Level 1 — 尚未完全失去人性</p>
+        <p>Level 3 — 迷因回音室</p>
+        <p>Level 5 — 完全 Brainrot ☠️</p>
+      </div>
+    </section>
+
+    <!-- Ethics -->
+    <section>
+      <h2>這個 App 不是什麼</h2>
+      <p>
+        Brainrotma 不是戒斷工具，<br>
+        也不是效率管理或數位排毒 App。<br><br>
+        它不說教、不提供解法，<br>
+        只是把注意力資本主義的運作方式，
+        赤裸地呈現在你眼前。
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Brainrotma © 2026<br>
+        <span>SYSTEM STATUS：仍在滑動</span>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
